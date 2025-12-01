@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Features Grid - Portfolio Ready</title>
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body class="background font-Nunito transition-colors duration-300">
+
+    <!-- DARK MODE TOGGLE BUTTON (Fixed Bottom Right) -->
+    <button onclick="toggleDarkMode()" class="fixed bottom-6 right-6 p-3 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 shadow-lg hover:scale-110 transition duration-300 z-50 focus:outline-none">
+        <!-- Sun Icon (Hidden by default, shown in dark mode) -->
+        <svg id="sun-icon" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <!-- Moon Icon (Shown by default, hidden in dark mode) -->
+        <svg id="moon-icon" class="h-6 w-6 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+    </button>
+
+    <!-- MAIN SECTION CONTAINER -->
+    <section class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+
+        <!-- 1. SECTION HEADER -->
+        <div class="text-center mb-16">
+            <h2 class="text-base font-bold text-gray-900 dark:text-white tracking-wide uppercase">Why Choose Us?</h2>
+            <p class="mt-2 text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight sm:text-5xl">
+                Powerful Features. Modern Design.
+            </p>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-400 mx-auto">
+                Everything you need to grow your business, packaged in one simple subscription.
+            </p>
+        </div>
+        
+        <!-- 2. THE FEATURES GRID CONTAINER -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- FEATURE CARD 1 -->
+            <div class="card space-y-2"> 
+                <div class="icon">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <div class="flex-grow space-y-2"> 
+                    <h3 class="font-bold text-xl text-gray-900 dark:text-white">Blazing Fast</h3>
+                    <p class="text-base text-gray-500 dark:text-gray-400">
+                        Experience sub-second load times globally. Optimized infrastructure ensures zero lag.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FEATURE CARD 2 -->
+            <div class="card space-y-2">
+                <div class="icon">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                </div>
+                <div class="flex-grow space-y-2">
+                    <h3 class="font-bold text-xl text-gray-900 dark:text-white">Enterprise Security</h3>
+                    <p class="text-base text-gray-500 dark:text-gray-400">
+                        Bank-level encryption and continuous threat detection. We take security seriously.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FEATURE CARD 3 -->
+            <div class="card space-y-2">
+                <div class="icon">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m-7.071 7.071l3.535-3.535M9.172 10.828a4 4 0 115.656-5.656 4 4 0 01-5.656 5.656zM15 17h-2a2 2 0 01-2-2V5a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <div class="flex-grow space-y-2">
+                    <h3 class="font-bold text-xl text-gray-900 dark:text-white">24/7 Support</h3>
+                    <p class="text-base text-gray-500 dark:text-gray-400">
+                        Get immediate help from our expert team, any time of day. We're here when you need us.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- ========================================================== -->
+    <!-- PRICING GRID -->
+    <!-- ========================================================== -->
+    <section class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-200 dark:border-gray-700">
+        
+        <!-- Pricing Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-base font-bold text-gray-900 dark:text-white tracking-wide uppercase">Simple Pricing</h2>
+            <p class="mt-2 text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight sm:text-5xl">
+                Start for free. Scale later.
+            </p>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+
+            <!-- Pricing Card 1: Basic (White in Light, Dark Gray in Dark) -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl flex flex-col border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition duration-300">
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Basic</h3>
+                <p class="mt-4 text-gray-500 dark:text-gray-400">Perfect for small teams.</p>
+                
+                <div class="mt-6">
+                    <span class="text-5xl font-extrabold text-gray-900 dark:text-white">$19</span>
+                    <span class="text-xl font-medium text-gray-500 dark:text-gray-400">/mo</span>
+                </div>
+
+                <a href="#" class="mt-8 block w-full py-3 px-6 text-center text-white bg-gray-900 dark:bg-white dark:text-gray-900 rounded-lg font-semibold hover:bg-black dark:hover:bg-gray-200 transition">
+                    Get Started
+                </a>
+
+                <ul class="mt-8 space-y-4 text-gray-600 dark:text-gray-400">
+                    <li class="flex items-center">
+                        <svg class="h-5 w-5 text-gray-900 dark:text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        Up to 5 Users
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="h-5 w-5 text-gray-900 dark:text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        10GB Storage
+                    </li>
+                    <li class="flex items-center text-gray-400 dark:text-gray-600">
+                        <svg class="h-5 w-5 text-gray-300 dark:text-gray-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        Dedicated Support
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pricing Card 2: Pro (High Contrast) -->
+            <!-- In Dark mode, we shift this to a slightly lighter gray or Keep distinct -->
+            <div class="bg-gray-900 dark:bg-indigo-900 p-8 rounded-2xl flex flex-col shadow-2xl transform scale-[1.05] z-10 transition duration-300">
+                <h3 class="text-2xl font-bold text-white">Pro</h3>
+                <p class="mt-4 text-gray-300 dark:text-indigo-200">The popular choice.</p>
+                
+                <div class="mt-6">
+                    <span class="text-5xl font-extrabold text-white">$49</span>
+                    <span class="text-xl font-medium text-gray-400 dark:text-indigo-200">/mo</span>
+                </div>
+
+                <a href="#" class="mt-8 block w-full py-3 px-6 text-center text-gray-900 bg-white rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Start 14-day Trial
+                </a>
+
+                <ul class="mt-8 space-y-4 text-gray-300 dark:text-indigo-100">
+                    <li class="flex items-center">
+                        <svg class="h-5 w-5 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        Unlimited Users
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="h-5 w-5 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        Unlimited Storage
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="h-5 w-5 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        Priority Support
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pricing Card 3: Enterprise -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl flex flex-col border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition duration-300">
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Enterprise</h3>
+                <p class="mt-4 text-gray-500 dark:text-gray-400">For large organizations.</p>
+                
+                <div class="mt-6">
+                    <span class="text-5xl font-extrabold text-gray-900 dark:text-white">Custom</span>
+                </div>
+
+                <a href="#" class="mt-8 block w-full py-3 px-6 text-center text-white bg-gray-900 dark:bg-white dark:text-gray-900 rounded-lg font-semibold hover:bg-black dark:hover:bg-gray-200 transition">
+                    Contact Sales
+                </a>
+
+                <ul class="mt-8 space-y-4 text-gray-600 dark:text-gray-400">
+                    <li class="flex items-center">
+                        <svg class="h-5 w-5 text-gray-900 dark:text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        Account Manager
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="h-5 w-5 text-gray-900 dark:text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        Custom Integrations
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="h-5 w-5 text-gray-900 dark:text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        99.99% Uptime
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Script to Handle Dark Mode Logic -->
+    <script>
+        function toggleDarkMode() {
+            // Toggles the 'dark' class on the <html> element
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>

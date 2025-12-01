@@ -1,0 +1,21 @@
+/* This file MUST exist at src/styles.css. */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply p-6 flex items-start bg-white rounded-2xl border border-gray-100 shadow-sm transition duration-300;
+    @apply hover:shadow-md hover:border-gray-200;
+    @apply dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600;
+}
+
+.icon {
+    @apply inline-flex p-3 rounded-xl bg-gray-100 text-gray-900 mr-4 flex-shrink-0;
+    @apply dark:bg-gray-700 dark:text-white;
+}
+
+.background {
+    @apply bg-gray-50 min-h-screen text-gray-900;
+    @apply dark:bg-gray-900 dark:text-white;
+}
