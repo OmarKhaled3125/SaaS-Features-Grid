@@ -83,4 +83,4 @@ Open index.html in your browser or use the VS Code Live Server extension.
 
 This project is open source and available under the MIT License.
 
-Built with ❤️ by [Your Name]
+Built with ❤️ by Omar Khaled
